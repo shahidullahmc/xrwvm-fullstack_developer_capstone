@@ -148,12 +148,12 @@ img{
 }
 
 .contact-details{
-    padding: 20px;
-    max-width: 400px;
-    color: rgb(97, 64, 128);
-    font-size: 18px;
+    color: black;
 }
 
+.contact-details strong{
+    color: rgb(97, 64, 128);
+}
 .contact-icon{
     width: 80px;
     margin-bottom: 20px;
