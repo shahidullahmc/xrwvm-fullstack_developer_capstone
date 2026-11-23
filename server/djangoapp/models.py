@@ -18,6 +18,7 @@ class CarMake(models.Model):
     def __str__(self):
         return self.name
 
+
 class CarModel(models.Model):
 
     car_make = models.ForeignKey(
