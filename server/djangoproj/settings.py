@@ -31,11 +31,17 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'u9999911-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
+    (
+        'u9999911-8000.theiadockernext-0-labs-prod-'
+        'theiak8s-4-tor01.proxy.cognitiveclass.ai'
+    ),
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://u9999911-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
+    (
+        'https://u9999911-8000.theiadockernext-0-labs-prod-'
+        'theiak8s-4-tor01.proxy.cognitiveclass.ai'
+    ),
 ]
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
@@ -67,11 +73,11 @@ ROOT_URLCONF = 'djangoproj.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-                'DIRS': [
-                    os.path.join(BASE_DIR, 'frontend/static'),
-                    os.path.join(BASE_DIR, 'frontend/build'),
-                    os.path.join(BASE_DIR, 'frontend/build/static'),
-                ],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'frontend/static'),
+            os.path.join(BASE_DIR, 'frontend/build'),
+            os.path.join(BASE_DIR, 'frontend/build/static'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -146,8 +152,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/static'),
-	os.path.join(BASE_DIR, 'frontend/build'),
-	os.path.join(BASE_DIR, 'frontend/build/static'),
+    os.path.join(BASE_DIR, 'frontend/build'),
+    os.path.join(BASE_DIR, 'frontend/build/static'),
 ]
-
-
